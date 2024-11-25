@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
   <title>EWDA Quiz</title>
   <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
+
 <body>
   <section id="startWindow">
-    <h1>Quiz</h1>
+    <h1 id="startHeader">Quiz</h1>
     <h2>To start the Quiz, press START</h2>
     <button id="start">START</button>
   </section>
@@ -19,10 +21,15 @@
     <div>
       <h4 id="question"></h4>
       <ul id="answerOptions"></ul>
-      <div id="result"></div>
     </div>
+  </section>
+  <section id="resultWindow">
+    <h1>Quiz</h1>
+    <div id="result"></div>
+    <button id="next">Next Question</button>
   </section>
   <script src="./Assets/js/questions.js"></script>
   <script src="./Assets/js/script.js"></script>
 </body>
+
 </html>

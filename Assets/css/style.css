@@ -1,3 +1,7 @@
 #quizWindow {
     display: none;
 }
+
+#resultWindow {
+    display: none;
+}
