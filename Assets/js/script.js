@@ -30,13 +30,13 @@ function setTime() {
 function quiz() {
     if (usedQuestions.length === questions.length) {
         endGame();
-        return        
+        return
     }
     let currentQuestionIndex;
     do {
         currentQuestionIndex = Math.floor(Math.random() * questions.length);
     } while (usedQuestions.includes(currentQuestionIndex));
-   
+
     usedQuestions.push(currentQuestionIndex);
 
     const currentQuestion = questions[currentQuestionIndex];
