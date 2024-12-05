@@ -45,6 +45,10 @@
     list-style-type: none;
 }
 
+#next {
+    font-size: 120%;
+}
+
 h1 {
     font-size: 300%;
     color: rgb(105, 105, 105);
@@ -57,9 +61,6 @@ li {
 }
 
 
-#next {
-    font-size: 120%;
-}
 
 html, body {
     position: relative;
@@ -113,4 +114,36 @@ li:active {
     background-color: rgb(241, 152, 152);
     cursor: pointer;
     ;
+}
+
+@media (max-width: 1500px) {
+    body {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 0.5rem;
+    }
+    button {
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0 4px 8px;
+    }
+/* h3 {
+    font-size: 60%;
+    font-weight: normal;
+}
+
+#question {
+    font-size: 60%;
+    font-weight: normal;
+}
+
+#answerOptions {
+    font-size: 60%;
+    font-weight: normal;
+} */
 }
