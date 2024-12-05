@@ -23,6 +23,7 @@
 }
 
 #question {
+    text-align: center;
     font-size: 170%;
     font-weight: bold;
     color: rgb(104, 0, 0);
@@ -78,7 +79,6 @@ body::before {
     height: 100%;
     background-image: url("../images/file-1ecA4sSaVVAFb1qffeiEfw.webp");
     background-size: cover;
-    /* background-repeat: repeat; */
     opacity: 0.05;
     z-index: -1;
     pointer-events: none;
@@ -96,12 +96,10 @@ button {
 button:hover {
     background-color: rgb(192, 226, 205);
     cursor: pointer;
-    ;
 }
 
 button:active {
     cursor: pointer;
-    ;
     background-color: rgb(241, 152, 152);
     box-shadow: inset 0 10px 16px;
 }
@@ -109,13 +107,11 @@ button:active {
 li:hover {
     background-color: rgb(192, 226, 205);
     cursor: pointer;
-    ;
 }
 
 li:active {
     background-color: rgb(241, 152, 152);
     cursor: pointer;
-    ;
 }
 
 @media (max-width: 1500px) {
