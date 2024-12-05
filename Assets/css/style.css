@@ -22,5 +22,95 @@
     flex-wrap: wrap;
 }
 
+#question {
+    font-size: 170%;
+    font-weight: bold;
+    color: rgb(104, 0, 0);
+}
+
+#result {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#scores {
+    font-size: 150%;
+}
+
+#bestScores {
+    font-size: 150%;
+}
+
+#answerOptions {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 300%;
+    color: rgb(105, 105, 105);
+}
 
 
+li {
+    font-size: 150%;
+    text-align: center;
+}
+
+
+#next {
+    font-size: 120%;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/file-1ecA4sSaVVAFb1qffeiEfw.webp");
+    background-size: cover;
+    /* background-repeat: repeat; */
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+}
+
+button {
+    margin: 3%;
+    font-size: 150%;
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: inset 0 8px 12px;
+}
+
+button:hover {
+    background-color: rgb(192, 226, 205);
+    cursor: pointer;
+    ;
+}
+
+button:active {
+    cursor: pointer;
+    ;
+    background-color: rgb(241, 152, 152);
+    box-shadow: inset 0 10px 16px;
+}
+
+li:hover {
+    background-color: rgb(192, 226, 205);
+    cursor: pointer;
+    ;
+}
+
+li:active {
+    background-color: rgb(241, 152, 152);
+    cursor: pointer;
+    ;
+}

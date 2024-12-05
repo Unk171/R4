@@ -29,7 +29,8 @@ function setTime() {
 
 function quiz() {
     if (usedQuestions.length === questions.length) {
-        endGame()
+        endGame();
+        return        
     }
     let currentQuestionIndex;
     do {
@@ -48,8 +49,10 @@ function quiz() {
         li.addEventListener("click", function () {
             const answerIndex = Number(li.getAttribute("data-id"));
             result.textContent = answerIndex === currentQuestion.correctAnswer ? "Correct" : "Wrong";
+            result.style.color = answerIndex === currentQuestion.correctAnswer ? "green" : "red"
             secondsLeft += answerIndex === currentQuestion.correctAnswer ? 15 : -5;
             scores += answerIndex === currentQuestion.correctAnswer ? 3 : 0;
+            clearInterval(timer);
             quizWindow.style.display = "none";
             resultWindow.style.display = "flex"
         })
@@ -78,10 +81,13 @@ function endGame() {
 next.addEventListener("click", function () {
     quizWindow.style.display = "flex";
     resultWindow.style.display = "none";
+    timerEl.textContent = secondsLeft + " seconds left.";
+    setTime();
     quiz()
 });
 
 start.addEventListener("click", function () {
+    clearInterval(timer);
     quizWindow.style.display = "flex";
     startWindow.style.display = "none";
     usedQuestions = [];
